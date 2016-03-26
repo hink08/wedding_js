@@ -1,0 +1,39 @@
+<div class="container">
+
+    <div>
+        <acme-navbar creation-date="main.creationDate"></acme-navbar>
+    </div>
+
+    <div class="row">
+        <div class="large-12 large-text-center columns">
+            <div class="panel">
+                <h1>Hello {{main.weddingContact.name}}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 large-text-center columns">
+            <label>Please select whether or not you will be attending:</label>
+            <label>
+                <input class="inline" type="radio" ng-model="main.weddingContact.attending" value="Yes"/>
+                Yes
+            </label>
+            <label>
+                <input type="radio" ng-model="main.weddingContact.attending" value="No"/>
+                No
+            </label>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="large-12 large-text-center columns">
+            <label>How many will be attending?</label>
+            <label>
+                <input class="inline" type="number" ng-model="main.weddingContact.attendingNumber" value="Yes"/>
+            </label>
+        </div>
+    </div>
+
+
+</div>
