@@ -37,6 +37,28 @@ $topbar-bg-color: #5AADBB;
   }
 }
 
+.main {
+    background-color: #FF8C00;
+    flex: 1;
+//    display: flex;
+//    flex-direction: column;
+}
+
+.bg-main-blur {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
+body{
+    background-color: #2E0927;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

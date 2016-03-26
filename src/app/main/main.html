@@ -1,39 +1,51 @@
-<div class="container">
+<div class="container main row">
+    <div class="large-10 columns">
+        <div class="row">
+            <div class="large-12 large-text-center columns">
+                <div>
+                    <h1>Greetings {{main.weddingContact.name}}</h1>
+                </div>
+            </div>
+        </div>
 
-    <div>
-        <acme-navbar creation-date="main.creationDate"></acme-navbar>
-    </div>
+        <div class="row">
+            <div class="large-12 large-text-center columns">
+                <h4>The favor of a reply is requested on or before July 20th:</h4>
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="large-12 large-text-center columns">
-            <div class="panel">
-                <h1>Hello {{main.weddingContact.name}}</h1>
+        <div class="row">
+            <div class="large-5 large-offset-2 columns">
+                <label for="attending">Please select whether or not you will be attending:</label>
+            </div>
+            <div class="large-4 end columns">
+                <label>
+                    <input id="attending" class="inline" type="radio" ng-model="main.weddingContact.attending" value="Yes"/>
+                    Yes
+                </label>
+                <label>
+                    <input id="attending" type="radio" ng-model="main.weddingContact.attending" value="No"/>
+                    No
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-4 large-offset-2 columns">
+                <label for="attending">How many will be attending?</label>
+            </div>
+            <div class="large-4 end columns">
+                <input id="attending" class="inline" type="number" ng-model="main.weddingContact.attendingNumber" value="1"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-10 large-offset-2 columns">
+                <label>What song would you like to dance with the bride?</label>
+                <label>
+                    <input class="inline" type="text" ng-model="main.weddingContact.weddingSong" value="1"/>
+                </label>
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="large-12 large-text-center columns">
-            <label>Please select whether or not you will be attending:</label>
-            <label>
-                <input class="inline" type="radio" ng-model="main.weddingContact.attending" value="Yes"/>
-                Yes
-            </label>
-            <label>
-                <input type="radio" ng-model="main.weddingContact.attending" value="No"/>
-                No
-            </label>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="large-12 large-text-center columns">
-            <label>How many will be attending?</label>
-            <label>
-                <input class="inline" type="number" ng-model="main.weddingContact.attendingNumber" value="1"/>
-            </label>
-        </div>
-    </div>
-
-
 </div>
